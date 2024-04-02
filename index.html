@@ -13,7 +13,7 @@
     </section>
 
     <nav id = "navbar">
-        <a class = "nav-link" href = "#wellcome-section"> Wellcome </a>
+        <a class = "nav-link" id = "welcome-link" href = "#wellcome-section"> Wellcome </a>
         <a class = "nav-link" href = "#projects"> Projects </a>
     </nav>
 
@@ -37,5 +37,14 @@
       <a id="profile-link" href="https://github.com/marcossFarias" target="_blank">My GitHub Profile</a>
     </div>
 </footer>
+
+<script>
+    document.querySelector("#welcome-link").addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+</script>
 
 </html>
